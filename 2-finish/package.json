@@ -1,0 +1,33 @@
+{
+  "name": "aitesters-2fa-totp-demo",
+  "version": "1.0.0",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "format": "biome format --write",
+    "check": "biome check --write --unsafe",
+    "check:ci": "biome check --error-on-warnings",
+    "tests:ui": "playwright test --ui",
+    "prepare": "husky"
+  },
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@biomejs/biome": "2.5.13",
+    "@faker-js/faker": "10.6.0",
+    "@playwright/test": "1.63.0",
+    "@types/node": "26.6.0",
+    "dotenv": "17.4.2",
+    "husky": "9.1.7",
+    "lint-staged": "17.5.1",
+    "otplib": "13.5.0",
+    "typescript": "6.0.3"
+  },
+  "engines": {
+    "node": "24.21.0",
+    "npm": "11.19.0"
+  },
+  "lint-staged": {
+    "*.ts": "biome check --write --diagnostic-level=error --no-errors-on-unmatched",
+    "*.{json,md}": "biome format --write --no-errors-on-unmatched"
+  }
+}
