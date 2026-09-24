@@ -2,6 +2,8 @@
 
 Materials from the webinar held on **16.09.2026**.
 
+The slides from the webinar are available in [`presentation.pdf`](presentation.pdf).
+
 This repository contains a **Playwright + TypeScript** test automation project, on which during the webinar we switch
 on **two-factor authentication (2FA)** for the demo account and automate the **TOTP code** step of the login flow using
 the [`otplib`](https://www.npmjs.com/package/otplib) library - while still logging in **through the UI** before every
